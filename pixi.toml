@@ -1,0 +1,25 @@
+[workspace]
+# TODO: Update these fields for your lab/project
+authors = ["Your Name <your.email@university.edu>"]
+channels = ["conda-forge"]
+description = "Scientific lab website built with Quarto"
+name = "my-lab-website"
+platforms = ["linux-64", "win-64", "osx-64", "osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+preview = { cmd = ["quarto", "preview", "index.qmd"] }
+render = { cmd = ["quarto", "render"] }
+clean = { cmd = "python _helper/cleanup.py && python -c \"import shutil; shutil.rmtree('public', ignore_errors=True)\"" }
+
+[dependencies]
+quarto = ">=1.5.57,<2"
+jupyter = ">=1.1.1,<2"
+dart-sass = ">=1.98.0,<2"
+
+# The quarto conda package's activation script on Windows incorrectly sets
+# QUARTO_DART_SASS to sass.bat, but the dart-sass package installs sass.exe.
+# Override it here so Quarto finds the native binary.
+# See: https://github.com/quarto-dev/quarto-cli/issues/6651
+[target.win-64.activation.env]
+QUARTO_DART_SASS = "%CONDA_PREFIX%\\Library\\bin\\sass.exe"

@@ -1,0 +1,199 @@
+project:
+  type: website
+  output-dir: public
+  pre-render:
+    - python _helper/cleanup.py
+  preview:
+    port: 8000
+
+execute:
+  freeze: auto
+
+filters:
+  - _helper/git-version.lua
+
+website:
+  title: "Thornton Lab"
+  site-url: https://yourusername.github.io/your-repo-name/
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research/index.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: team.qmd
+        text: Team
+      - href: showcase/index.qmd
+        text: Showcase
+    right:
+      - icon: github
+        href: https://github.com/floesche/template-web
+  sidebar:
+    - id: research
+      title: "Research"
+      contents:
+        - href: research/index.qmd
+          text: Overview
+        - text: "---"
+        - section: "ConnectTrack"
+          contents:
+            - text: "Design"
+              href: research/project-alpha/design.qmd
+            - text: "Methods"
+              href: research/project-alpha/methods.qmd
+        - section: "SynaptogenEM"
+          contents:
+            - text: "Overview"
+              href: research/project-beta/overview.qmd
+    - id: showcase
+      title: "Showcase"
+      contents:
+        - href: showcase/index.qmd
+          text: Overview
+        - text: "---"
+        - section: "Themes"
+          contents:
+            - text: "Default"
+              href: showcase/default.qmd
+            - text: "Cerulean"
+              href: showcase/cerulean.qmd
+            - text: "Cosmo"
+              href: showcase/cosmo.qmd
+            - text: "Cyborg"
+              href: showcase/cyborg.qmd
+            - text: "Darkly"
+              href: showcase/darkly.qmd
+            - text: "Flatly"
+              href: showcase/flatly.qmd
+            - text: "Journal"
+              href: showcase/journal.qmd
+            - text: "Litera"
+              href: showcase/litera.qmd
+            - text: "Lumen"
+              href: showcase/lumen.qmd
+            - text: "Lux"
+              href: showcase/lux.qmd
+            - text: "Materia"
+              href: showcase/materia.qmd
+            - text: "Minty"
+              href: showcase/minty.qmd
+            - text: "Morph"
+              href: showcase/morph.qmd
+            - text: "Pulse"
+              href: showcase/pulse.qmd
+            - text: "Quartz"
+              href: showcase/quartz.qmd
+            - text: "Sandstone"
+              href: showcase/sandstone.qmd
+            - text: "Simplex"
+              href: showcase/simplex.qmd
+            - text: "Sketchy"
+              href: showcase/sketchy.qmd
+            - text: "Slate"
+              href: showcase/slate.qmd
+            - text: "Solar"
+              href: showcase/solar.qmd
+            - text: "Spacelab"
+              href: showcase/spacelab.qmd
+            - text: "Superhero"
+              href: showcase/superhero.qmd
+            - text: "United"
+              href: showcase/united.qmd
+            - text: "Vapor"
+              href: showcase/vapor.qmd
+            - text: "Yeti"
+              href: showcase/yeti.qmd
+            - text: "Zephyr"
+              href: showcase/zephyr.qmd
+        - section: "Yeti Colors"
+          contents:
+            - text: "Default"
+              href: showcase/default.qmd
+            - text: "Emphasis"
+              href: showcase/yeti_emphasis.qmd
+            - text: "Olive Garden Feast"
+              href: showcase/yeti_olive.qmd
+            - text: "Fiery Ocean"
+              href: showcase/yeti_ocean.qmd
+            - text: "Black & Gold Elegance"
+              href: showcase/yeti_elegance.qmd
+            - text: "Spring Garden"
+              href: showcase/yeti_spring.qmd
+            - text: "Vivid Lavender"
+              href: showcase/yeti_lavender.qmd
+            - text: "Pastel Dreamland Adventure"
+              href: showcase/yeti_pastel.qmd
+            - text: "Golden Summer Fields"
+              href: showcase/yeti_golden.qmd
+            - text: "Meadow Green"
+              href: showcase/yeti_meadow.qmd
+            - text: "Refreshing Summer Fun"
+              href: showcase/yeti_summerfun.qmd
+            - text: "Neutral Harmony Bliss"
+              href: showcase/yeti_harmony.qmd
+            - text: "Dark Sunset"
+              href: showcase/yeti_sunset.qmd
+            - text: "Vibrant Color Fiesta"
+              href: showcase/yeti_fiesta.qmd
+            - text: "Sunny Beach Day"
+              href: showcase/yeti_beach.qmd
+            - text: "Autumn Harvest"
+              href: showcase/yeti_autumn.qmd
+            - text: "Summer Dream"
+              href: showcase/yeti_dream.qmd
+            - text: "Midnight Sky"
+              href: showcase/yeti_midnight.qmd
+            - text: "Earthy Tones"
+              href: showcase/yeti_earthy.qmd
+            - text: "Soft Lavender"
+              href: showcase/yeti_softlavender.qmd
+            - text: "Fresh Greens"
+              href: showcase/yeti_freshgreens.qmd
+            - text: "Pastel Rainbow Fantasy"
+              href: showcase/yeti_rainbow.qmd
+            - text: "Blue Serenity"
+              href: showcase/yeti_serenity.qmd
+            - text: "Warm Neutral Tones"
+              href: showcase/yeti_warmtones.qmd
+  page-footer:
+    center: |
+      This is a template website: all persons, institutions, and projects are fictitious, and any resemblance to actual persons or entities is entirely coincidental.
+
+format:
+  html:
+    theme: yeti
+    toc: true
+    code-fold: true
+    link-external-icon: true
+    link-external-newwindow: false
+    embed-resources: false
+    format-links:
+      - format: typst
+        text: PDF
+        icon: file-pdf
+      - docx
+      - format: gfm
+        text: Markdown (gfm)
+        icon: markdown
+  typst:
+    section-numbering: "1.1.1.1"
+    papersize: us-letter
+    fontsize: 10pt
+    margin:
+      x: 1in
+      y: 1in
+    columns: 2
+    template-partials:
+      - _helper/typst-template.typ
+      - _helper/typst-show.typ
+      - _helper/biblio.typ
+    filters:
+      - _helper/detect-citations.lua
+      - _helper/video-placeholder.lua
+    include-before-body:
+      - _helper/figure-span.typ
+      - _helper/inline-code-wrap.typ
+  docx: default
+  gfm: default
