@@ -13,8 +13,8 @@ filters:
   - _helper/git-version.lua
 
 website:
-  title: "Thornton Lab"
-  site-url: https://yourusername.github.io/your-repo-name/
+  title: "Soffers Lab"
+  site-url: https://J-Soffers.github.io/website-test/
   navbar:
     left:
       - href: index.qmd
@@ -159,7 +159,7 @@ website:
               href: showcase/yeti_warmtones.qmd
   page-footer:
     center: |
-      This is a template website: all persons, institutions, and projects are fictitious, and any resemblance to actual persons or entities is entirely coincidental.
+      This website teplate was developed by Frank Loesch, https://github.com/floesche/template-web.
 
 format:
   html:

@@ -1,15 +1,15 @@
 ---
-title: Thornton Lab
+title: Soffers' research
 format:
     html:
         format-links: false
 ---
 
-Welcome to the **Thornton Lab** at Corane Farm Research. We study the developmental assembly of sensorimotor circuits and activity-dependent synaptic connectivity, combining electron microscopy connectomics with in vivo physiology and computation.
+Welcome to the **Soffers Lab**. We study the gene-regulatory mechanisms that govern the development of neuronal circuits in *Drosophila*, combining genetic experimetnal approaches with electron microscopy connectomics and computation.
 
 ## Research interests
 
-- Developmental wiring of sensorimotor circuits
+- The role of transcription and epigenetic factors during wiring of sensorimotor circuits
 - Activity-dependent synaptogenesis and circuit refinement
 - Electron microscopy connectomics at synaptic resolution
 - Computational models of circuit assembly rules
@@ -18,14 +18,15 @@ Welcome to the **Thornton Lab** at Corane Farm Research. We study the developmen
 
 | Date | Event |
 |------|-------|
-| 2026-03-01 | ConnectTrack paper accepted at *Nature Neuroscience* |
-| 2026-01-10 | Søren Nielsen joins the lab as a research specialist |
-| 2025-11-15 | Dr. Ingrid Solberg moves to University of Oslo as Assistant Professor |
-| 2025-09-05 | SynaptogenEM poster presented at SfN Annual Meeting |
-| 2025-06-20 | DevCircuit preprint posted on bioRxiv |
+|2026-04-15| Dr Soffers joins the STEM outreach event for an extended weekend: Pueblo Brain Science- New Mexico|
+| 2026-03-09 | NINDS K99/R00 awarded to Jelly Soffers|
+| 2026-03-18 | "A Developmental Atlas of the Drosophila Nerve Cord Uncovers a Global Temporal Code for Neuronal Identity" preprint posted on bioRxiv|
+| 2025-03-08 | "A Ubiquitin network safeguards cell identity by continuously degrading a stem-cell related translational machinery" preprint posted on bioRxiv
+
+
 
 ## Contact
 
-- **Email:** [thornton@coranefarm.org](mailto:thornton@coranefarm.org)
-- **Office:** Corane Farm Research, Building B, Room 212
-- **Address:** 19700 Double Lane, Selden, MD 20147
+- **Email:** [j.soffers@umkc.edu](mailto:j.soffers@umkc.edu)
+- **Office:** University of Missouri  Kansas- CityCorane Farm Research, Spencer Chemistry Building, Room 509
+- **Address:** 5009 Rockhill Rd, Kanas City, MO 64111
